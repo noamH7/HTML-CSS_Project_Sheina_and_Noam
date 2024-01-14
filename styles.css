@@ -31,4 +31,38 @@
        } 
    }
    
-   
+
+   .flip-card-inner {
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    margin :20px
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #f0f0f0;
+    margin: 50px;
+}
+
+
+.container{
+    padding:0px;
+    margin:0px;
+    background-size: cover;
+    height: 100vh;
+    background-image:url('./Untitled\ video\ -\ Made\ with\ Clipchamp.gif');  ;
+}
