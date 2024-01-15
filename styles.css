@@ -71,7 +71,10 @@
 .index-container .part{
     display:inline-block;
 }
-.part{
-    border:10px,black;
+
+#responses{
+    font-size: 1.5rem;
+    margin-right: 175px;
 
 }
+
