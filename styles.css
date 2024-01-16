@@ -15,6 +15,12 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
    }
+   #tables-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
    } 
 
    @media (max-width: 1200px) {
@@ -77,4 +83,25 @@
     margin-right: 175px;
 
 }
+
+
+.group-tables{
+    display: flex;
+    flex-wrap:wrap;
+    flex: 1 2 0;
+    margin: 20px;
+}
+
+
+
+table{
+    width: 320px;
+
+}
+
+table tr td:nth-child(2){
+    direction: ltr;
+}
+
+
 
