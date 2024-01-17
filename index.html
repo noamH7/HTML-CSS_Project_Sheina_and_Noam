@@ -10,18 +10,20 @@
 
 <body>
     <div class="container">
+       
         <h1 id="title">צמחים לצידי הדרכים</h1>
-        <p>46 מיני צמחים המומלצים לשתילה בצידי דרכים, באחזקה נמוכה ללא תוספת השקיה ובתנאי מינימום של 350 מ"מ גשם בממוצע
-            רב שנתי.
-            לאחר שתילת הצמחים עד להתבססות יש להשקות באופן סדיר במשך שלוש שנים.
+        <p>46 מיני צמחים המומלצים לשתילה בצידי דרכים</br> באחזקה נמוכה ללא תוספת השקיה ובתנאי מינימום של 350 מ"מ גשם בממוצע
+            רב שנתי.</br>
+            לאחר שתילת הצמחים עד להתבססות יש להשקות באופן סדיר במשך שלוש שנים.</br>
             נתמך בעיקר על 20 שנות תצפית בכביש 40 בקטע ביל"ו-רמלה.
         </p>
+        
     </div>
     <ul class="index-menu">
         <li><a href="./page1.html">הכירו את הצמחים</a></li>
         <li><a href="./page5.html">אינדקס צמחים</a></li>
     </ul>
-
+    <hr>
     <div class="index-container">
         <div id="playlist" class="part">
         <iframe width="738" height="415"
@@ -33,16 +35,15 @@
 
         <div id="responses" class="part">
          <h2>השאירו תגובה</h2>
-        <form action="/index.html" method="POST">
+        <form action="/index.html" method="GET">
             <label for="username">שם:</label><br>
-            <input type="text" id="username" name="username"><br>
+            <input type="text" id="username" name="username" required><br>
 
             <label for="email">מייל לקבלת תשובה:</label><br>
-            <input type="email" id="email" name="email"><br>
+            <input type="email" id="email" name="email" required><br>
 
             <label for="text">תגובה:</label><br>
-   
-            <textarea id="response" name="response" rows="4" cols="30"></textarea><br>
+            <textarea id="response" name="response" rows="4" cols="30" required></textarea><br>
 
             <input type="checkbox" id="checkbox" value="sendAd">
             <label for="checkbox"> מאשר קבלת פרסומות</label><br>
@@ -51,6 +52,14 @@
             
         </form>
         </div>
+
+    <hr>
+        <footer>
+            <h3>מידע נוסף</h3>
+           <a href="https://www.gov.il/BlobFolder/reports/moag-booklet-016/he/Professional_information_plantscatalogue.pdf" target="_blank">חוברת צמחים לצידי הדרכים</a>
+           <a href="https://www.kkl.org.il/" target="_blank">אתר קקל</a>
+           <a href="https://youtu.be/o8J2VWWFXrc?list=PLr3SbN1twtdqgx7OcHOkXjp0jCu_pQXKm" target="_blank">פליליסט של הצמחים</a>
+        </footer>
     </div>
 </body>
 

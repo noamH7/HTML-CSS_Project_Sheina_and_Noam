@@ -1,46 +1,13 @@
+body{
+    background-color: rgb(144, 238,144, 0.3);
+}
+
 .plant img{
-   
     width: 250px;
     height: 250px;
    }
-   
-   .menu {
-       display: flex;
-       justify-content: space-around;
-       list-style: none;
-   }
 
-   @media (min-width: 1200px) {
-   .plant-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-   }
-   #tables-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
-   } 
 
-   @media (max-width: 1200px) {
-    .plant-container{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: stretch;
-
-    }
-    .flip-card{
-        flex-grow: 1;
-       
-    } 
-
-   .flip-card h2{ 
-    padding-top: 125px;
-}
-}
 
    .flip-card-inner {
     width: 250px;
@@ -48,11 +15,13 @@
     transform-style: preserve-3d;
     transition: transform 0.6s;
     
-}
+    }
+
+
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-}
+    }
 
 .flip-card-front,
 .flip-card-back {
@@ -60,32 +29,26 @@
     height: 250px;
     position: absolute;
     backface-visibility: hidden;
-}
+    }
 
 .flip-card-back {
     transform: rotateY(180deg);
     background-color: #f0f0f0;
     
-}
+    }
 
 
-.container{
-    padding:0px;
-    margin:0px;
-    background-size: cover;
-    height: 100vh;
-    background-image:url('./Untitled\ video\ -\ Made\ with\ Clipchamp.gif');  ;
-}
+
 
 .index-container .part{
     display:inline-block;
-}
+    }
 
 #responses{
     font-size: 1.5rem;
     margin-right: 175px;
-
-}
+    
+    }
 
 
 .group-tables{
@@ -93,33 +56,171 @@
     flex-wrap:wrap;
     flex: 1 2 0;
     margin: 20px;
-}
+    }
 
 
 
 table{
     width: 320px;
+    border-collapse: collapse;
 
-}
+    }
+
+table th{
+    background-color: green;
+    color: white;
+    padding: 3px 10px 3px 6px; 
+    }
+
+table tr td{
+    border: 1px solid greenyellow;
+    padding: 3px 10px;
+    }
 
 table tr td:nth-child(2){
     direction: ltr;
+    }
+
+table tr:nth-child(odd){
+    background-color: lightgreen;
+    }
+
+
+#headlineP5{
+    text-align: center;
 }
 
 
 
-.menu{
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
     z-index: 1;
     position: fixed;
-    background-color:blueviolet;
+    background-color:green;
     margin-top: -5px;
-    
+
+    top: 0;
+    left: 40%;
+   
 }
 
-.menu li{
+.menu a{
     font-size:25px;
-    padding-left:15px;
+    padding-left: 35px;
+    color: #F0DAAE;
+
+}
+
+.index-menu{
+    
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10px;
+    left: 50%; 
+    transform: translateX(-50%);
+    
+
+}
+.index-menu a{
+    font-size:25px;
+    color: #F0DAAE;
+    padding:5px;
+ 
+}
+
+.index-menu li {
+    margin-top:20px;
+}
+
+.index-menu li:nth-child(1) a {
+    background-color: green;
+    margin: 10px; 
+}
+
+.index-menu li:nth-child(2) a {
+    background-color: green;
+    margin: 10px; 
+}
+
+
+h1  {
+    font-size:3rem;
+    color: green;
+}
+p{
+    font-size: 2rem;
+    color: green;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.container {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    height: 100vh;
+    background-image: url('./2.gif');
+   
+}
+
+
+footer a {
+    font-size: medium;
+    text-decoration:underline;
+    display:block;
+     
+}
+
+footer {
+  text-align: center;
 }
 
 
 
+@media (min-width: 1200px) {
+    .plant-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: auto;
+    }
+    #tables-container{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     
+     }
+    } 
+ 
+    @media (max-width: 1200px) {
+     .plant-container{
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: stretch;
+ 
+     }
+     .flip-card{
+         flex-grow: 1;
+        
+     } 
+ 
+    .flip-card h2{ 
+     padding-top: 125px;
+     }
+ }
+ 
