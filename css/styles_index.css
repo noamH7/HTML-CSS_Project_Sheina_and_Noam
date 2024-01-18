@@ -41,6 +41,15 @@
    
 }
 
+.index-container .part{
+    display:inline-block;
+    }
+
+#responses{
+    font-size: 1.5rem;
+    margin-right: 175px;
+    
+    }
 
 footer a {
     font-size: medium;
