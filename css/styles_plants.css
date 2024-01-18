@@ -1,0 +1,52 @@
+.plant img{
+    width: 250px;
+    height: 250px;
+   }
+
+
+
+   .flip-card-inner {
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    
+    }
+
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    }
+
+.flip-card-front,
+.flip-card-back {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    backface-visibility: hidden;
+    }
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #f0f0f0;
+    
+    }
+
+    @media (max-width: 1200px) {
+        .plant-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: stretch;
+    
+        }
+        .flip-card{
+            flex-grow: 1;
+           
+        }
+    
+       .flip-card h2{ 
+        padding-top: 125px;
+        }
+    }
